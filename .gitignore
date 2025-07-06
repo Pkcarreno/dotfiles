@@ -51,6 +51,9 @@
 !.config/powershell/
 .config/powershell/*.bak
 
+# Starship
+!.config/starship.toml
+
 # Tmux
 !.config/tmux/
 .config/tmux/local.conf
