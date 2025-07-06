@@ -205,28 +205,27 @@ Set-PSReadLineOption -Colors @{
   String = 'DarkCyan'
 }
 
-## Final Line to set prompt
-if (-not (Get-Module -ListAvailable -Name pure-pwsh))
+
+if (Test-CommandExists starship)
 {
-  Install-Module -Name pure-pwsh -Scope CurrentUser -Force -SkipPublisherCheck
-}
-Import-Module -Name pure-pwsh
-
-$pure.PwdFormatter = {
-  (
-    ((Split-Path $pwd).Replace($HOME, '~').Split($pwd.Provider.ItemSeparator) |% {$_[0]}) +
-    (Split-Path -Leaf $pwd)
-  ) -join '/'
-}
-
-$pure.UserColor = '38;5;242;4'
-
-$pure.PrePrompt = {
-  param ($user, $cwd, $git, $slow)
-  $seperator = $pure._branchcolor +  " ❯ "
-  "`n$user{0}$cwd{1}$git$slow " -f
-    ($user ? $seperator : ''),
-    ($git ? $seperator : '')
+  Invoke-Expression (& { (starship init powershell | Out-String) })
+} else
+{
+  if ($SCOOP_EXIST)
+  {
+    Write-Host "starship command not found. Attempting to install via scoop..."
+    try
+    {
+      Install-From-Scoop "starship"
+      Invoke-Expression (& { (starship init powershell | Out-String) })
+    } catch
+    {
+      Write-Error "Failed to install starship. Error: $_"
+    }
+  } else
+  {
+    Write-Error "Install scoop in order to install starship."
+  }
 }
 
 if (Test-CommandExists zoxide)
