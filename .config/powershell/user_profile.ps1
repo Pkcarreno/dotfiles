@@ -250,24 +250,24 @@ if (Test-CommandExists zoxide)
   }
 }
 
-if (Test-CommandExists fnm)
+if (Test-CommandExists mise)
 {
   fnm env --use-on-cd --shell power-shell | Out-String | Invoke-Expression
 } else
 {
   if ($SCOOP_EXIST)
   {
-    Write-Host "fnm command not found. Attempting to install via scoop..."
+    Write-Host "mise command not found. Attempting to install via scoop..."
     try
     {
-      Install-From-Scoop "fnm"
-      fnm env --use-on-cd --shell power-shell | Out-String | Invoke-Expression
+      Install-From-Scoop "mise"
+      mise install
     } catch
     {
-      Write-Error "Failed to install zoxide. Error: $_"
+      Write-Error "Failed to install mise. Error: $_"
     }
   } else
   {
-    Write-Error "Install scoop in order to install zoxide."
+    Write-Error "Install scoop in order to install mise."
   }
 }
