@@ -252,7 +252,7 @@ if (Test-CommandExists zoxide)
 
 if (Test-CommandExists mise)
 {
-  fnm env --use-on-cd --shell power-shell | Out-String | Invoke-Expression
+  mise activate pwsh | Out-String | Invoke-Expression
 } else
 {
   if ($SCOOP_EXIST)
@@ -261,6 +261,7 @@ if (Test-CommandExists mise)
     try
     {
       Install-From-Scoop "mise"
+      mise activate pwsh | Out-String | Invoke-Expression
       mise install
     } catch
     {
