@@ -64,3 +64,6 @@
 
 # mise
 !.config/mise/
+
+# lazygit
+!.config/lazygit/
