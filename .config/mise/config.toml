@@ -1,0 +1,13 @@
+[tools]
+bun = "latest"
+ghq = "latest"
+node = "lts"
+python = "latest"
+rust = "latest"
+java = "zulu-21"
+"npm:commitizen" = "latest"
+"npm:corepack" = "latest"
+"npm:cz-conventional-changelog" = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
