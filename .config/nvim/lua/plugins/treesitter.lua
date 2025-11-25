@@ -3,6 +3,9 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    lazy = false,
+    branch = "main",
     opts = {
       ensure_installed = {
         "astro",
@@ -52,16 +55,5 @@ return {
         },
       },
     },
-    config = function(_, opts)
-      require("nvim-treesitter.configs").setup(opts)
-
-      -- MDX
-      vim.filetype.add({
-        extension = {
-          mdx = "mdx",
-        },
-      })
-      vim.treesitter.language.register("markdown", "mdx")
-    end,
   },
 }
