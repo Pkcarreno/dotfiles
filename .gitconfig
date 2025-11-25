@@ -19,7 +19,7 @@
   co = checkout
   ci = commit
   ca = commit -a
-  cz = czg
+  cz = cz c
   ps = "!git push origin $(git rev-parse --abbrev-ref HEAD)"
   pl = "!git pull origin $(git rev-parse --abbrev-ref HEAD)"
   st = status
