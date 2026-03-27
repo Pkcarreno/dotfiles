@@ -26,6 +26,7 @@
 !.globalgitignore
 !README.md
 !.czrc
+!.npmrc
 !.config/
 .config/*
 !.scripts/
