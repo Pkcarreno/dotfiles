@@ -69,4 +69,4 @@
   defaultBranch = main
 [include]
   path = ~/.config/git/delta.gitconfig
-  path = ~/.gitconfig-extra
+  path = ~/.gitconfig.private
