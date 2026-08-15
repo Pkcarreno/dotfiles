@@ -1,7 +1,3 @@
-local discipline = require("pk.discipline")
-
-discipline.cowboy()
-
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
