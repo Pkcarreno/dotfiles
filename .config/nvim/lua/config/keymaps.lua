@@ -76,10 +76,6 @@ keymap.set("n", "<leader>r", function()
   require("pk.hsl").replaceHexWithHSL()
 end)
 
-keymap.set("n", "<leader>i", function()
-  require("pk.lsp").toggleInlayHints()
-end)
-
 -- package-info keymaps
 keymap.set(
   "n",
