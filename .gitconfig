@@ -62,5 +62,9 @@
 	process = git-lfs filter-process
 [ghq]
   root = ~/.ghq
+[pull]
+  rebase = false
+[init]
+  defaultBranch = main
 [include]
   path = ~/.gitconfig-extra
