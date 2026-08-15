@@ -1,0 +1,12 @@
+[delta]
+  line-numbers = true
+  side-by-side = false
+  features = decorations
+[delta "interactive"]
+  keep-plus-minus-markers = true
+[delta "decorations"]
+  commit-decoration-style = ol
+  commit-style = raw
+  file-style = omit
+  hunk-header-decoration-style = box
+  hunk-header-style = file line-number syntax

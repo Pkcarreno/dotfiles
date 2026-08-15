@@ -4,6 +4,7 @@
 	ignorecase = false
   autocrlf = false
   eol = lf
+  pager = delta
 [push]
   default = simple
 [color]
@@ -67,4 +68,5 @@
 [init]
   defaultBranch = main
 [include]
+  path = ~/.config/git/delta.gitconfig
   path = ~/.gitconfig-extra

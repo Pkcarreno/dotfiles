@@ -20,10 +20,6 @@
 /**/*.elc
 
 # But not these files...
-!.gitignore
-!.gitattributes
-!.gitconfig
-!.globalgitignore
 !README.md
 !.czrc
 !.npmrc
@@ -31,6 +27,13 @@
 .config/*
 !.scripts/
 .scripts/*
+
+# Git
+!.gitignore
+!.gitattributes
+!.gitconfig
+!.globalgitignore
+!.config/git/
 
 # Nvim
 !.config/nvim/
