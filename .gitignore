@@ -44,8 +44,6 @@
 !.config/fish/config-windows.fish
 !.config/fish/config.fish
 !.config/fish/fish_plugins
-!.config/fish/functions/fzf_change_directory.fish
-!.config/fish/functions/fish_user_key_bindings.fish
 
 # Powershell
 !.config/powershell/
