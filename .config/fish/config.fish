@@ -35,10 +35,6 @@ if status is-interactive
     set -l theme_path ~/.config/fish/themes/$active_theme.fish
     test -r $theme_path; and source $theme_path
 
-    # Fzf
-    set -g FZF_PREVIEW_FILE_CMD "bat --style=numbers --color=always --line-range :500"
-    set -g FZF_LEGACY_KEYBINDINGS 0
-
     # aliases
     alias ls "ls -p -G"
     alias la "ls -A"
@@ -50,6 +46,15 @@ if status is-interactive
     if type -q eza
         alias ll "eza -l -g --icons"
         alias lla "ll -a"
+        set fzf_preview_dir_cmd eza --all --color=always
+    end
+
+    if type -q bat
+        set fzf_preview_file_cmd "bat --style=numbers --color=always --line-range :500"
+    end
+
+    if type -q delta
+        set fzf_diff_highlighter delta --paging=never --width=20
     end
 
     if type -q tmux
