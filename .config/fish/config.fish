@@ -6,7 +6,7 @@ set -gx PATH ~/.local/bin $PATH
 
 if type -q /home/linuxbrew/.linuxbrew/bin/brew
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-    set -Ux HOMEBREW_NO_AUTO_UPDATE 1
+    set -gx HOMEBREW_NO_AUTO_UPDATE 1
 end
 
 switch (uname)
