@@ -48,14 +48,14 @@
 	name = Pedro Carreno
 [github]
 	user = pkcarreno
+[interactive]
+  diffFilter = delta --color-only
 [diff]
-  tool = nvimdiff
-[difftool "nvimdiff"]
-	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "nvimdiff"]
-	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  colorMove = default
+[merge]
+  conflictstyle = diff3
+[blame]
+  pager = delta
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

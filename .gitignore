@@ -65,3 +65,6 @@
 
 # lazygit
 !.config/lazygit/
+
+# bat
+!.config/bat/

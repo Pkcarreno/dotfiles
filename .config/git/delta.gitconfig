@@ -1,12 +1,41 @@
 [delta]
-  line-numbers = true
+  features = kanagawa-dragon
+  navigate = true
+  light = false
   side-by-side = false
-  features = decorations
-[delta "interactive"]
-  keep-plus-minus-markers = true
-[delta "decorations"]
-  commit-decoration-style = ol
-  commit-style = raw
-  file-style = omit
-  hunk-header-decoration-style = box
-  hunk-header-style = file line-number syntax
+
+[delta "kanagawa-dragon"]
+  dark = true
+  syntax-theme = kanagawa-dragon
+
+  minus-style = syntax "#2D1C1C"
+  minus-emph-style = syntax bold "#43242B"
+  # minus-non-emph-style = syntax auto
+  plus-style = syntax "#202820"
+  plus-emph-style = syntax bold "#2B3D2B"
+  # plus-non-emph-style = syntax auto
+  zero-style = syntax
+  whitespace-error-style = "#c4746e" reverse
+
+  commit-style = "#c4b28a" bold
+  commit-decoration-style = "#8ba4b0" box
+  file-style = "#c5c9c5" bold
+  file-decoration-style = "#393836" ul
+  # hunk-header-style = file line-number syntax
+  hunk-header-decoration-style = "#2D4F67" box
+  hunk-header-file-style = "#8ba4b0"
+  hunk-header-line-number-style = "#c4b28a" bold
+
+  line-numbers-left-style = "#737c73"
+  line-numbers-right-style = "#737c73"
+  line-numbers-minus-style = "#c4746e"
+  line-numbers-plus-style = "#87a987"
+  line-numbers-zero-style = "#737c73"
+
+  # blame-code-style = syntax
+  blame-palette = "#181616" "#1D1C19" "#282727" "#393836"
+
+  merge-conflict-ours-diff-header-style = "#c4b28a" bold
+  merge-conflict-ours-diff-header-decoration-style = "#393836" box
+  merge-conflict-theirs-diff-header-style = "#8ba4b0" bold
+  merge-conflict-theirs-diff-header-decoration-style = "#393836" box
