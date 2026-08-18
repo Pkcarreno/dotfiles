@@ -67,5 +67,5 @@
 [init]
   defaultBranch = main
 [include]
-  path = ~/.config/git/delta.gitconfig
-  path = ~/.gitconfig.private
+  path = config.delta
+  path = config.private
