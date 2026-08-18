@@ -4,10 +4,6 @@ set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 
-# Go
-set -g GOPATH $HOME/go
-set -gx PATH $GOPATH/bin $PATH
-
 if type -q /home/linuxbrew/.linuxbrew/bin/brew
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
     set -Ux HOMEBREW_NO_AUTO_UPDATE 1
