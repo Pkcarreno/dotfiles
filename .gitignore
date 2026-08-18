@@ -38,7 +38,7 @@
 # Nvim
 !.config/nvim/
 
-# Fish local config
+# Fish
 !.config/fish/
 .config/fish/functions/
 .config/fish/completions/
