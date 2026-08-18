@@ -1,5 +1,4 @@
 [core]
-	excludesfile = ~/.globalgitignore
 	editor = nvim
 	ignorecase = false
   autocrlf = false
