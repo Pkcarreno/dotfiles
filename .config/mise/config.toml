@@ -8,6 +8,7 @@ java = "temurin-17"
 "npm:commitizen" = "latest"
 "npm:corepack" = "latest"
 "npm:cz-conventional-changelog" = "latest"
+go = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
