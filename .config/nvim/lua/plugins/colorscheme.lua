@@ -50,11 +50,11 @@ return {
           MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
         }
       end,
-      -- theme = "dragon",
-      background = {
-        dark = "dragon",
-        light = "lotus",
-      },
+      theme = "dragon",
+      -- background = {
+      --   dark = "dragon",
+      --   light = "lotus",
+      -- },
     },
   },
 }
