@@ -31,6 +31,10 @@ if status is-interactive
     set -g theme_hide_hostname yes
     set -g theme_hostname no
 
+    set -l active_theme kanagawa-dragon
+    set -l theme_path ~/.config/fish/themes/$active_theme.fish
+    test -r $theme_path; and source $theme_path
+
     # Fzf
     set -g FZF_PREVIEW_FILE_CMD "bat --style=numbers --color=always --line-range :500"
     set -g FZF_LEGACY_KEYBINDINGS 0
