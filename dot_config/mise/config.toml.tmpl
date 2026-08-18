@@ -1,0 +1,23 @@
+[tools]
+bun = "latest"
+ghq = "latest"
+node = "lts"
+python = "latest"
+rust = "latest"
+java = "temurin-17"
+"npm:commitizen" = "latest"
+"npm:corepack" = "latest"
+"npm:cz-conventional-changelog" = "latest"
+go = "latest"
+
+[env]
+{{- if eq .chezmoi.os "windows" }}
+GOPATH = "{{ .chezmoi.homeDir }}/AppData/Local/go"
+_.path = ["{{ .chezmoi.homeDir }}/AppData/Local/go/bin"]
+{{- else }}
+GOPATH = "{{ .chezmoi.homeDir }}/.local/share/go"
+_.path = ["{{ .chezmoi.homeDir }}/.local/share/go/bin"]
+{{- end }}
+
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
