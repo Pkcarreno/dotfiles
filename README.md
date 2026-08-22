@@ -1,58 +1,16 @@
-Esta configuración esta inspirado en:
+# dotfiles
 
-- [La configuración de Takuya](https://github.com/craftzdog/dotfiles-public)
-- [la configuración de Chris Titus](https://github.com/ChrisTitusTech/powershell-profile)
-- [LazyVim](https://www.lazyvim.org/)
-- Y, [algunas buenas practicas](https://dotfiles.github.io/utilities/)
+[chezmoi](https://www.chezmoi.io/) manages these dotfiles.
 
-## Contenido
+## Requirements
 
-- NeoVim config
-- git config
-- fish config
-- PowerShell config
-- tmux config
+- **Core:** `chezmoi`, `git`, `neovim`, `mise`, `fish`
+- **Utilities:** `ripgrep`, `fd`, `zoxide`, `eza`, `bat`, `delta`
+- **Windows:** `scoop`, `starship`, `gcc`
 
-## Instalación previa
+## Installation
 
-### Windows
+1. Install the `git` and `chezmoi` packages.
+2. Run the `chezmoi init --apply pkcarreno` command.
 
-Se requiere tener instalado [Scoop](https://scoop.sh/).
-
-Ejecutar el siguiente comando para instalar todos los paquetes necesarios
-
-```Powershell
-  scoop install git peco nvm sudo neovim gzip bat tree-sitter fd ripgrep gcc
-```
-
-### Linux
-
-Instalar los siguientes paquetes:
-
-```bash
-  peco neovim fish tmux eza fd bat ripgrep
-```
-
-nota: _recomendado usar homebrew_
-
-## Setup
-
-1. Ejecutar `git clone` de este proyecto dentro de la carpeta raiz (`~/`).
-2. Mover los archivos dentro de la carpeta `dotfiles` a la raiz. _(Si existe una carpeta `.config` en la raiz, entonces mover manualmente los archivos dentro de `dotfiles/.config` a `.config`)_
-3. Ejecutar los pasos post setup.
-
-## Post Setup
-
-### Fish
-
-Ejecutar el siguiente script para instalar el gestor de plugins de fish (fisher) e instalar los plugins del proyecto. _[Tomado de este comentario](https://github.com/jorgebucaran/fisher/issues/775#issuecomment-1703684632)_
-
-```fish
-curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update
-```
-
-### Node
-
-En caso de usar **fish** este va a instalar `nvm`, en el caso de usar **windows** se instalara `nvm` al ejecutar el comando de scoop.
-
-Cuando se tenga nvm se debe instalar la version lts de node, y, posteriormente, se debe ejecutar el siguiente comando `npm i -g czg`. En el caso de usar **fish** debe instalar una version de node mediante **nvm**, este instalara los paquetes necesarios automaticamente gracias al parametro [$nvm_default_packages](https://github.com/jorgebucaran/nvm.fish#nvm_default_packages)
+If you use SSH, add the `--ssh` flag to the command.
