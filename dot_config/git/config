@@ -1,11 +1,39 @@
+[user]
+  email = 34664891+Pkcarreno@users.noreply.github.com
+  name = Pedro Carreno
+
 [core]
-	editor = nvim
-	ignorecase = false
+  fileMode = true
+  editor = nvim
+  ignoreCase = false
   autocrlf = false
   eol = lf
   pager = delta
+
+[init]
+  defaultBranch = main
+
+[commit]
+  verbose = true
+  
+[fetch]
+  prune = true
+  parallel = 3
+
+[submodule]
+  fetchJobs = 3
+
+[pull]
+  rebase = true
+
 [push]
   default = simple
+  autoSetupRemote = true
+  followTags = yes
+
+[help]
+  autoCorrect = prompt
+
 [color]
   status = auto
   diff = auto
@@ -13,6 +41,7 @@
   interactive = auto
   grep = auto
   ui = auto
+
 [alias]
   a = "!git status --short | peco | awk '{print $2}' | xargs git add"
   d = diff
@@ -40,32 +69,27 @@
   # add conflicted file on merge
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
 
-[hub]
-  protocol = https
-[user]
-	email = 34664891+Pkcarreno@users.noreply.github.com
-	name = Pedro Carreno
-[github]
-	user = pkcarreno
 [interactive]
   diffFilter = delta --color-only
+
 [diff]
   colorMove = default
+
 [merge]
   conflictstyle = diff3
+
 [blame]
   pager = delta
+
+[rerere]
+  enabled = true
+
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
-[ghq]
-  root = ~/.ghq
-[pull]
-  rebase = false
-[init]
-  defaultBranch = main
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
+
 [include]
   path = config.delta
   path = config.private
