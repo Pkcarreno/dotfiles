@@ -61,6 +61,7 @@
   f = fetch
   fa = fetch --all --prune --jobs=10
   hh = help
+  hha = config --get-regexp ^alias\\.
   lg = log --stat
   lgp = log --stat -p
   lo = log --oneline --decorate
