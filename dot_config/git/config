@@ -93,6 +93,8 @@
   sts = status -s
   stb = status -sb
   sh = show
+  sw = switch
+  swc = switch -c
 
 [interactive]
   diffFilter = delta --color-only
