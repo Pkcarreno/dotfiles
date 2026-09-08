@@ -51,6 +51,7 @@
   bnm = branch --no-merged
   c = commit -v
   co = checkout
+  cob = checkout -b
   ca = commit -v -a
   cam = commit -v -a -m
   cmsg = commit -m
