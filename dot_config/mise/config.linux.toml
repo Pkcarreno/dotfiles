@@ -1,0 +1,3 @@
+[env]
+GOPATH = "/home/pk/.local/share/go"
+_.path = ["/home/pk/.local/share/go/bin"]
