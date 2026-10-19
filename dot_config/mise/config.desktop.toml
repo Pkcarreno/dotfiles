@@ -1,0 +1,16 @@
+[tools]
+# Conventional commits related tools
+"npm:commitizen" = "latest"
+"npm:cz-conventional-changelog" = "latest"
+
+# LSP tools for helix editor
+"npm:typescript-language-server" = "latest"
+"npm:vscode-langservers-extracted" = "latest"
+"npm:@tailwindcss/language-server" = "latest"
+"npm:@astrojs/language-server" = "latest"
+"npm:yaml-language-server" = "latest"
+"npm:@taplo/cli" = "latest"
+marksman = "latest"
+"npm:@markdoc/language-server" = "latest"
+"npm:dockerfile-language-server-nodejs" = "latest"
+"npm:dot-language-server" = "latest"

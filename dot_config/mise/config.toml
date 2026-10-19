@@ -1,22 +1,4 @@
 [tools]
-bun = "latest"
-node = "lts"
-python = "latest"
-rust = "latest"
-java = "temurin-17"
-"npm:commitizen" = "latest"
-"npm:cz-conventional-changelog" = "latest"
-go = "latest"
-"npm:typescript-language-server" = "latest"
-"npm:vscode-langservers-extracted" = "latest"
-"npm:@tailwindcss/language-server" = "latest"
-"npm:@astrojs/language-server" = "latest"
-"npm:yaml-language-server" = "latest"
-"npm:@taplo/cli" = "latest"
-marksman = "latest"
-"npm:@markdoc/language-server" = "latest"
-"npm:dockerfile-language-server-nodejs" = "latest"
-"npm:dot-language-server" = "latest"
 "aqua:helix-editor/helix" = "latest"
 
 [settings]
