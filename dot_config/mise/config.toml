@@ -19,15 +19,6 @@ marksman = "latest"
 "npm:dot-language-server" = "latest"
 "aqua:helix-editor/helix" = "latest"
 
-[env]
-{{- if eq .chezmoi.os "windows" }}
-GOPATH = "{{ .chezmoi.homeDir }}/AppData/Local/go"
-_.path = ["{{ .chezmoi.homeDir }}/AppData/Local/go/bin"]
-{{- else }}
-GOPATH = "{{ .chezmoi.homeDir }}/.local/share/go"
-_.path = ["{{ .chezmoi.homeDir }}/.local/share/go/bin"]
-{{- end }}
-
 [settings]
 idiomatic_version_file_enable_tools = ["node", "bun", "npm", "pnpm", "yarn", "go", "rust", "python"]
 idiomatic_version_file_ignore_minimum_versions = true
