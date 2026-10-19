@@ -5,7 +5,6 @@ python = "latest"
 rust = "latest"
 java = "temurin-17"
 "npm:commitizen" = "latest"
-"npm:corepack" = "latest"
 "npm:cz-conventional-changelog" = "latest"
 go = "latest"
 "npm:typescript-language-server" = "latest"
@@ -29,4 +28,5 @@ _.path = ["{{ .chezmoi.homeDir }}/.local/share/go/bin"]
 {{- end }}
 
 [settings]
-idiomatic_version_file_enable_tools = ["node"]
+idiomatic_version_file_enable_tools = ["node", "bun", "npm", "pnpm", "yarn", "go", "rust", "python"]
+idiomatic_version_file_ignore_minimum_versions = true
