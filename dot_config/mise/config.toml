@@ -3,6 +3,14 @@
 bat = "latest"
 eza = "latest"
 
+[shell_alias]
+ls = "ls -p -G"
+la = "ls -A"
+ll = "eza -l -g --icons"
+lla = "ll -a"
+g = "git"
+
+
 [settings]
 idiomatic_version_file_enable_tools = ["node", "bun", "npm", "pnpm", "yarn", "go", "rust", "python"]
 idiomatic_version_file_ignore_minimum_versions = true

@@ -35,17 +35,7 @@ if status is-interactive
     set -l theme_path ~/.config/fish/themes/$active_theme.fish
     test -r $theme_path; and source $theme_path
 
-    # aliases
-    alias ls "ls -p -G"
-    alias la "ls -A"
-    alias ll "ls -l"
-    alias lla "ll -A"
-    alias g git
-    command -qv nvim && alias vim nvim
-
     if type -q eza
-        alias ll "eza -l -g --icons"
-        alias lla "ll -a"
         set fzf_preview_dir_cmd eza --all --color=always
     end
 
