@@ -1,3 +1,6 @@
+[bootstrap.mise_shell_activate]
+fish = "auto"
+
 [env]
 GOPATH = "/home/pk/.local/share/go"
 _.path = ["/home/pk/.local/share/go/bin"]
