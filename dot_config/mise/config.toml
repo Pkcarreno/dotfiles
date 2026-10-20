@@ -1,10 +1,10 @@
 [tools]
-"aqua:helix-editor/helix" = "latest"
 bat = "latest"
 delta = "latest"
 eza = "latest"
 fd = "latest"
 fzf = "latest"
+helix = "latest"
 zoxide = "latest"
 
 [shell_alias]
