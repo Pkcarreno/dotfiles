@@ -5,6 +5,7 @@ eza = "latest"
 fd = "latest"
 fzf = "latest"
 helix = "latest"
+ripgrep = "latest"
 zoxide = "latest"
 
 [shell_alias]
