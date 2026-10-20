@@ -46,8 +46,4 @@ if status is-interactive
     if type -q delta
         set fzf_diff_highlighter delta --paging=never --width=20
     end
-
-    if type -q tmux
-        alias ide "~/.scripts/ide"
-    end
 end
