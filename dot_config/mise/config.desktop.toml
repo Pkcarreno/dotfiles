@@ -17,3 +17,4 @@ marksman = "latest"
 
 # CLI utilities
 gh = "latest"
+gitui = "latest"
