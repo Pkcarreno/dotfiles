@@ -14,3 +14,6 @@ marksman = "latest"
 "npm:@markdoc/language-server" = "latest"
 "npm:dockerfile-language-server-nodejs" = "latest"
 "npm:dot-language-server" = "latest"
+
+# CLI utilities
+gh = "latest"
