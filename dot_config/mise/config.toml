@@ -3,6 +3,7 @@
 bat = "latest"
 delta = "latest"
 eza = "latest"
+zoxide = "latest"
 
 [shell_alias]
 ls = "ls -p -G"
