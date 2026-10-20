@@ -3,6 +3,8 @@
 bat = "latest"
 delta = "latest"
 eza = "latest"
+fd = "latest"
+fzf = "latest"
 zoxide = "latest"
 
 [shell_alias]
