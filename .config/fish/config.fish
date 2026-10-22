@@ -4,9 +4,6 @@ set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 
-set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
-test -f $LOCAL_CONFIG; and source $LOCAL_CONFIG
-
 if status is-interactive
     set fish_greeting ""
 
@@ -33,3 +30,6 @@ if status is-interactive
         set fzf_diff_highlighter delta --paging=never --width=20
     end
 end
+
+set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
+test -f $LOCAL_CONFIG; and source $LOCAL_CONFIG
