@@ -4,11 +4,6 @@ set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 
-if type -q /home/linuxbrew/.linuxbrew/bin/brew
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-    set -gx HOMEBREW_NO_AUTO_UPDATE 1
-end
-
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 test -f $LOCAL_CONFIG; and source $LOCAL_CONFIG
 
