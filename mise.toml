@@ -4,3 +4,4 @@
 "~/.config/bat" = { mode = "copy" }
 "~/.config/gitui" = { mode = "copy" }
 "~/.config/git" = { mode = "copy" }
+"~/.config/tmux" = { mode = "copy", exclude = ["local.conf"] }
