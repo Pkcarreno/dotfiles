@@ -29,6 +29,14 @@ if status is-interactive
     if type -q delta
         set fzf_diff_highlighter delta --paging=never --width=20
     end
+
+    if type -q mise
+        mise activate fish | source
+    end
+else
+    if type -q mise
+        mise activate fish --shims | source
+    end
 end
 
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
