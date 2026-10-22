@@ -1,0 +1,3 @@
+[dotfiles]
+"~/mise.toml" = { source = "mise.toml", mode = "symlink" }
+"~/.config/mise" = { source = ".config/mise", mode = "symlink" }
