@@ -1,0 +1,37 @@
+theme="kanagawa-dragon"
+
+[editor]
+color-modes = true
+mouse = true
+middle-click-paste = false
+scrolloff = 10
+scroll-lines = 1
+line-number = "absolute"
+cursorline = true
+continue-comments = true
+gutters = ["diagnostics", "line-numbers", "diff"]
+auto-completion = true
+path-completion = true
+auto-format = true
+rulers = [80]
+end-of-line-diagnostics = "hint"
+default-yank-register="+"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = "˽"
+skip-levels = 0
+
+[editor.inline-diagnostics]
+cursor-line = "disable"
+
+[editor.soft-wrap]
+wrap-indicator = ""
