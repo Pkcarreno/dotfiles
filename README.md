@@ -1,16 +1,29 @@
 # dotfiles
 
-[chezmoi](https://www.chezmoi.io/) manages these dotfiles.
+Managed with [mise](https://mise.jdx.dev/).
 
-## Requirements
+Core tools and terminal utilities are automatically provisioned and managed by `mise` across Linux and Windows (`neovim`, `helix`, `fish`, `herdr`, `ripgrep`, `fd`, `zoxide`, `eza`, `bat`, `delta`).
 
-- **Core:** `chezmoi`, `git`, `neovim`, `mise`, `fish`
-- **Utilities:** `ripgrep`, `fd`, `zoxide`, `eza`, `bat`, `delta`
-- **Windows:** `scoop`, `starship`, `gcc`
+## Prerequisites
+
+- `git`
+- `mise`
+- **Windows only:** PowerShell 7 (`pwsh`)
 
 ## Installation
 
-1. Install the `git` and `chezmoi` packages.
-2. Run the `chezmoi init --apply pkcarreno` command.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/pkcarreno/dotfiles.git ~/.dotfiles
+   # Or via SSH:
+   git clone git@github.com:pkcarreno/dotfiles.git ~/.dotfiles
+  ```
 
-If you use SSH, add the `--ssh` flag to the command.
+2. Run bootstrap specifying your target environment (e.g., `desktop`, `server`):
+  ```bash
+  mise bootstrap -E <env> --from https://github.com/pkcarreno/dotfiles
+  ```
+
+(Tip: Add `--plan` to preview actions before applying).
+
+Note: This setup relies on `mise dotfiles`, which is currently experimental and undergoing active development upstream.
