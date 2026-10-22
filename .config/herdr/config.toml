@@ -1,0 +1,31 @@
+onboarding = false
+
+[theme]
+name = "vesper"
+auto_switch = false
+
+[theme.custom]
+accent = "#8ba4b0"
+panel_bg = "#181616"
+surface_dim = "#12120f"
+surface0 = "#1D1C19"
+surface1 = "#282727"
+overlay0 = "#393836"
+overlay1 = "#737c73"
+text = "#c5c9c5"
+subtext0 = "#a6a69c"
+mauve = "#8992a7"
+green = "#8a9a7b"
+yellow = "#c4b28a"
+red = "#c4746e"
+blue = "#8ba4b0"
+teal = "#8ea4a2"
+peach = "#b6927b"
+
+[[keys.command]]
+key = "prefix+alt+g"
+type = "popup"
+command = "gitui"
+description = "run gitui"
+width = "80%"
+height = "80%"

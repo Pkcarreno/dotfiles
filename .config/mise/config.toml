@@ -7,6 +7,7 @@ fzf = "latest"
 helix = "latest"
 ripgrep = "latest"
 zoxide = "latest"
+herdr = "latest"
 
 [shell_alias]
 ls = "ls -p -G"

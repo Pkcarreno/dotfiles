@@ -13,3 +13,4 @@
 "~/.npmrc" = { mode = "copy" }
 "~/.config/helix" = { mode = "copy" }
 "~/.config/ghostty" = { mode = "copy" }
+"~/.config/herdr/config.toml" = { mode = "copy" }
