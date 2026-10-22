@@ -1,4 +1,4 @@
-set -gx EDITOR nvim
+set -gx EDITOR hx
 
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
