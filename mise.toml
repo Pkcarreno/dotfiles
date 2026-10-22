@@ -12,3 +12,4 @@
 "~/.czrc" = { mode = "copy" }
 "~/.npmrc" = { mode = "copy" }
 "~/.config/helix" = { mode = "copy" }
+"~/.config/ghostty" = { mode = "copy" }
