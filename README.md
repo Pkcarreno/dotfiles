@@ -13,10 +13,10 @@ Core tools and terminal utilities are automatically provisioned and managed by `
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/pkcarreno/dotfiles.git ~/.dotfiles
-   # Or via SSH:
-   git clone git@github.com:pkcarreno/dotfiles.git ~/.dotfiles
+  ```bash
+  git clone https://github.com/pkcarreno/dotfiles.git ~/.dotfiles
+  # Or via SSH:
+  git clone git@github.com:pkcarreno/dotfiles.git ~/.dotfiles
   ```
 
 2. Run bootstrap specifying your target environment (e.g., `desktop`, `server`):
