@@ -6,3 +6,4 @@
 "~/.config/git" = { mode = "copy" }
 "~/.config/tmux" = { mode = "copy", exclude = ["local.conf"] }
 "~/.config/powershell" = { mode = "copy", exclude = ["local.ps1"] }
+"~/.config/nvim" = { mode = "copy" }
