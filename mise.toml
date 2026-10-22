@@ -7,3 +7,4 @@
 "~/.config/tmux" = { mode = "copy", exclude = ["local.conf"] }
 "~/.config/powershell" = { mode = "copy", exclude = ["local.ps1"] }
 "~/.config/nvim" = { mode = "copy" }
+"~/.config/fish" = { mode = "copy", exclude = ["config-file.fish", "fish_variables", "conf.d", "completions", "functions"] }
