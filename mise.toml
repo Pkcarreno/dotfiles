@@ -1,3 +1,4 @@
 [dotfiles]
 "~/mise.toml" = { mode = "copy" }
 "~/.config/mise" = { mode = "copy", exclude = ["*.local.toml"] }
+"~/.config/bat" = { mode = "copy" }
