@@ -10,4 +10,5 @@
 "~/.config/fish" = { mode = "copy", exclude = ["config-file.fish", "fish_variables", "conf.d", "completions", "functions"] }
 "~/.config/starship.toml" = { mode = "copy" }
 "~/.czrc" = { mode = "copy" }
+"~/.npmrc" = { mode = "copy" }
 "~/.config/helix" = { mode = "copy" }
