@@ -1,5 +1,9 @@
-[bootstrap.mise_shell_activate]
-fish = "auto"
+[bootstrap.packages]
+"apt:fish" = "latest"
+"dnf:fish" = "latest"
+
+[bootstrap.user]
+login_shell = "/usr/bin/fish"
 
 [env]
 GOPATH = "/home/pk/.local/share/go"
