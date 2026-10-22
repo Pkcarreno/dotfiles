@@ -7,11 +7,6 @@ fzf = "latest"
 helix = "latest"
 ripgrep = "latest"
 zoxide = "latest"
-go = "latest"
-bun = "latest"
-node = "latest"
-python = "latest"
-rust = "latest"
 
 [shell_alias]
 ls = "ls -p -G"

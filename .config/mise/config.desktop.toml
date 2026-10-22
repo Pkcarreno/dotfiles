@@ -18,3 +18,10 @@ marksman = "latest"
 # CLI utilities
 gh = "latest"
 gitui = "latest"
+
+# Engines
+go = "latest"
+bun = "latest"
+node = "latest"
+python = "latest"
+rust = "latest"
