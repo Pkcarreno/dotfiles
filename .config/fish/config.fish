@@ -9,15 +9,6 @@ if type -q /home/linuxbrew/.linuxbrew/bin/brew
     set -gx HOMEBREW_NO_AUTO_UPDATE 1
 end
 
-switch (uname)
-    case Darwin
-        source (dirname (status --current-filename))/config-osx.fish
-    case Linux
-        source (dirname (status --current-filename))/config-linux.fish
-    case '*'
-        source (dirname (status --current-filename))/config-windows.fish
-end
-
 set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 test -f $LOCAL_CONFIG; and source $LOCAL_CONFIG
 
