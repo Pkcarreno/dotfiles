@@ -18,6 +18,10 @@ if status is-interactive
     set -l theme_path ~/.config/fish/themes/$active_theme.fish
     test -r $theme_path; and source $theme_path
 
+    if type -q mise
+        mise activate fish | source
+    end
+
     if type -q eza
         set fzf_preview_dir_cmd eza --all --color=always
     end
@@ -28,10 +32,6 @@ if status is-interactive
 
     if type -q delta
         set fzf_diff_highlighter delta --paging=never --width=20
-    end
-
-    if type -q mise
-        mise activate fish | source
     end
 
     if type -q zoxide
