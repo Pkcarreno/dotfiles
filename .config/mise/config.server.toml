@@ -1,0 +1,10 @@
+[bootstrap.linux.firewall]
+backend = "auto"
+default_incoming = "deny"
+default_outgoing = "allow"
+
+[[bootstrap.linux.firewall.rules]]
+name = "ssh-admin"
+port = 22
+protocol = "tcp"
+action = "limit"
