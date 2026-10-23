@@ -33,6 +33,10 @@ if status is-interactive
     if type -q mise
         mise activate fish | source
     end
+
+    if type -q zoxide
+        zoxide init fish | source
+    end
 else
     if type -q mise
         mise activate fish --shims | source
